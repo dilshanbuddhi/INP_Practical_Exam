@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="505.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.contraller.ServerFormContraller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4ffc2" height="35.0" layoutX="-2.0" layoutY="-1.0" stroke="#3f845f" strokeType="INSIDE" width="393.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7d0e7" height="45.0" layoutX="-1.0" layoutY="461.0" stroke="#c7feff" strokeType="INSIDE" width="392.0" />
+      <Text layoutX="151.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="servertextfield" layoutX="35.0" layoutY="470.0" />
+      <Button layoutX="200.0" layoutY="471.0" mnemonicParsing="false" onAction="#sentOnAction" prefHeight="26.0" prefWidth="66.0" text="Send" textFill="#3cff00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="293.0" layoutY="471.0" mnemonicParsing="false" onAction="#ImageSentOnAction" text="Image" textFill="#0d00ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scrollPane" layoutX="32.0" layoutY="42.0" prefHeight="402.0" prefWidth="325.0">
+         <content>
+            <VBox fx:id="serverVbox" prefHeight="397.0" prefWidth="324.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

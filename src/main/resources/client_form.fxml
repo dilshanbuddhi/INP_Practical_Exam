@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="527.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.contraller.ClientFormContraller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7d0e7" height="45.0" layoutX="-1.0" layoutY="478.0" stroke="#c7feff" strokeType="INSIDE" width="402.0" />
+      <TextField fx:id="lienttextfield" layoutX="34.0" layoutY="489.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4ffc2" height="35.0" layoutX="1.0" layoutY="-1.0" stroke="#3f845f" strokeType="INSIDE" width="402.0" />
+      <Text layoutX="146.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" wrappingWidth="129.57501220703125">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Button layoutX="211.0" layoutY="489.0" mnemonicParsing="false" onAction="#sentonAction" text="Send" textFill="#0c9420">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="314.0" layoutY="489.0" mnemonicParsing="false" onAction="#ImageSentOnAction" text="image" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scrollPane" layoutX="36.0" layoutY="63.0" prefHeight="388.0" prefWidth="318.0">
+         <content>
+            <VBox fx:id="clientVbox" prefHeight="335.0" prefWidth="276.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
